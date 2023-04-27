@@ -1,3 +1,3 @@
 # Simple Card Component
 
-Live version at: https://vercel.com/moe399/product-card/8ro1U2btMKosqUG8P6FAj9HAqtEV
+Live version at: https://product-card-a727pctlk-moe399.vercel.app/
