@@ -1,0 +1,177 @@
+:root {
+  --green-color: #428069;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f3eae3;
+
+  align-items: center;
+
+  height: 100vh;
+}
+
+#card {
+  max-width: 500px;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#img-section img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#img-section {
+  max-width: 500px;
+}
+
+p {
+  font-family: "Fraunces", serif;
+}
+
+#product-section {
+  padding: 20px;
+}
+
+.product-type {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 5px;
+}
+
+#product-section h1 {
+  font-family: "Fraunces", serif;
+  margin-bottom: 10px;
+}
+
+.product-desc {
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+
+  margin-bottom: 20px;
+}
+
+#price-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#price {
+  color: var(--green-color);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#old-price {
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #aaaab5;
+}
+
+#card button {
+  background-color: #428069;
+  width: 100%;
+
+  border: none;
+  height: 20%;
+  max-height: 200px;
+  padding: 10px 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#card button:active {
+  background-color: #1a4031;
+}
+
+#card button p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+  #card {
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+  }
+
+  #img-section {
+    width: 50%;
+  }
+
+  #img-section img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+  }
+
+  #card button {
+    background-color: #428069;
+    width: 100%;
+
+    border: none;
+    height: 12%;
+    max-height: 200px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+  }
+
+  #product-section {
+    padding: 20px;
+    flex: 1;
+  }
+
+  #card button img {
+    height: 70%;
+  }
+
+  #price-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 40px;
+  }
+
+  .product-type {
+    margin-bottom: 15px;
+  }
+
+  #product-section h1 {
+    margin-bottom: 20px;
+  }
+
+  .product-desc {
+    margin-bottom: 20px;
+  }
+}
